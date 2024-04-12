@@ -35,18 +35,18 @@ photo[:] = 255, 0, 255
 cv2.circle(photo, (photo.shape[1] // 2, photo.shape[0] // 2), 170, (255, 255 ,255), thickness=5)
 
 # 2 горизонтальные красные линии
-cv2.line(photo, (150, 175), (200, 175), (0,0,255), thickness=3)
-cv2.line(photo, (250, 175), (300, 175), (0,0,255), thickness=3)
+cv2.line(photo, (170, 175), (200, 175), (0,0,255), thickness=3)
+cv2.line(photo, (250, 175), (280, 175), (0,0,255), thickness=3)
 
 # 4 вертикальные синии линии
-cv2.line(photo, (150, 175), (150, 250), (255,0,0), thickness=3)
-cv2.line(photo, (200, 175), (200, 250), (255,0,0), thickness=3)
-cv2.line(photo, (250, 175), (250, 250), (255,0,0), thickness=3)
-cv2.line(photo, (300, 175), (300, 250), (255,0,0), thickness=3)
+cv2.line(photo, (170, 175), (170, 225), (255,0,0), thickness=3)
+cv2.line(photo, (200, 175), (200, 225), (255,0,0), thickness=3)
+cv2.line(photo, (250, 175), (250, 225), (255,0,0), thickness=3)
+cv2.line(photo, (280, 175), (280, 225), (255,0,0), thickness=3)
 
 # 2 зеленые дуги эллипса
-cv2.ellipse(photo, (225, 250), (25, 45), 0, 0, 180, (0,255,0), thickness=3)
-cv2.ellipse(photo, (225, 250), (75, 105), 0, 0, 180, (0,255,0), thickness=3)
+cv2.ellipse(photo, (225, 225), (25, 30), 0, 0, 180, (0,255,0), thickness=3)
+cv2.ellipse(photo, (225, 225), (55, 60), 0, 0, 180, (0,255,0), thickness=3)
 
 cv2.imshow('U Letter', photo)
 cv2.waitKey(0)
